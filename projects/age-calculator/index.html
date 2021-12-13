@@ -14,7 +14,27 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <h2>Age Calculator</h2>
+      <div class="input-wrapper">
+        <input type="date" id="date-input" />
+        <button onclick="ageCalculate()">Calculate</button>
+      </div>
+      <div class="outputs-wrapper">
+        <div>
+          <span id="years"> - </span>
+          <p>Years</p>
+        </div>
+        <div>
+          <span id="months"> - </span>
+          <p>Months</p>
+        </div>
+        <div>
+          <span id="days"> - </span>
+          <p>Days</p>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
