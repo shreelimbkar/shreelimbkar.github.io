@@ -39,7 +39,7 @@ function ageCalculate() {
   }
 
   if (currentDate >= birthDetails.date) {
-    birthDate = currentDate - birthDate.date;
+    birthDate = currentDate - birthDetails.date;
   } else {
     birthMonth--;
     let days = months[currentMonth - 2];
@@ -49,10 +49,17 @@ function ageCalculate() {
       birthYear--;
     }
   }
-  console.log(birthYear, birthMonth, birthDate);
+  //   console.log(birthYear, birthMonth, birthDate);
+  displayResult(birthYear, birthMonth, birthDate);
 }
 
 function leapYearChecker(year) {
   months[1] = year % 4 == 0 || (year % 100 == 0 && year % 400 == 0) ? 29 : 28;
-  console.log(year, months[1]);
+  //   console.log(year, months[1]);
+}
+
+function displayResult(birthYear, birthMonth, birthDate) {
+  document.querySelector("#years").textContent = birthYear;
+  document.querySelector("#months").textContent = birthMonth;
+  document.querySelector("#days").textContent = birthDate;
 }
