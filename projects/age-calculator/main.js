@@ -1,5 +1,9 @@
 const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
+window.addEventListener("load", () => {
+  document.querySelector("#date-input").valueAsDate = new Date();
+});
+
 function ageCalculate() {
   let today = new Date();
   let inputDate = new Date(document.querySelector("#date-input").value);
