@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotto & Bitcoin Calculator</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Lotto & Bitcoin</h1>
+        <div class="box">
+          <div class="ribbon"><span>New</span></div>
+        </div>
+      </header>
+      <article class="main">
+        <div class="card">
+          <div class="card-header">
+            <p class="title">Enter a Date and Time</p>
+          </div>
+          <div class="card-body">
+            <form onsubmit="return false;">
+              <label for="txtDateTime">
+                <input
+                  type="datetime-local"
+                  name="txtDateTime"
+                  id="txtDateTime"
+                  class="txtDateTime"
+                />
+              </label>
+              <button
+                type="button"
+                name="btnSubmit"
+                id="btnSubmit"
+                class="btnSubmit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <table class="drawtable" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th>Draw Date/Time</th>
+                <th>your bitcoin's value</th>
+              </tr>
+            </thead>
+            <tbody id="bitcoinvalues"></tbody>
+          </table>
+        </div>
+      </article>
+      <aside class="sidebar">
+        <div class="card">
+          <div class="card-header">
+            <p class="title">The Irish Lotto</p>
+          </div>
+          <div class="card-body">
+            <p>
+              Since 16th April 1988, the Irish Lotto draw takes place every
+              Saturday at 8pm. On 30th May 1990 an additional Wednesday evening
+              draw was introduced.
+            </p>
+            <p>
+              What would EUR 100 in winnings invested on a draw date be worth in
+              Euro now?
+            </p>
+            <p>
+              Enter a date and time in the form to get the next draw date and
+              time, with the current value of your investment.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
