@@ -14,13 +14,28 @@
   <body>
     <div class="container">
       <div class="row">
-        <input type="range" min="20" max="200" value="20" id="weight" />
+        <input
+          type="range"
+          min="20"
+          max="200"
+          value="20"
+          id="weight"
+          oninput="calculateBMI()"
+        />
         <span id="weight-val">20 kg</span>
       </div>
       <div class="row">
-        <input type="range" min="100" max="250" value="100" id="height" />
+        <input
+          type="range"
+          min="100"
+          max="250"
+          value="100"
+          id="height"
+          oninput="calculateBMI()"
+        />
         <span id="height-val">100 cm</span>
       </div>
+      <p id="result">20.0</p>
     </div>
     <script src="main.js"></script>
   </body>
