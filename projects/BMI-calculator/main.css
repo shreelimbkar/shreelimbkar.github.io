@@ -72,3 +72,9 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   color: #0be881;
 }
+
+#category {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
