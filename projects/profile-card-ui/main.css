@@ -29,3 +29,101 @@ body {
   box-shadow: 0 5px 15px rgba(50, 50, 50, 0.1);
   padding: 50px 0;
 }
+
+.card * {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 0 8px #fff;
+}
+
+.card h4 {
+  color: var(--theme-color);
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+}
+
+.card h5 {
+  color: #454545;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.details,
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.details h2 {
+  font-weight: 400;
+}
+
+.details span {
+  color: var(--theme-color);
+}
+
+.buttons button {
+  width: 130px;
+  padding: 8px 0;
+  border-radius: 25px;
+  border: 3px solid var(--theme-color);
+}
+
+.buttons button:first-child {
+  background-color: var(--theme-color);
+  color: #fff;
+}
+
+.buttons button:last-child {
+  background-color: transparent;
+  color: var(--theme-color);
+}
+
+.themes {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(50, 50, 50, 0.1);
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.themes button {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #ddd;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: #3498db;
+}
+
+.btn2 {
+  background-color: #ff1756;
+}
+
+.btn3 {
+  background-color: #1cb65d;
+}
+.btn4 {
+  background-color: #8e44ad;
+}
+.btn5 {
+  background-color: #f4b932;
+}
